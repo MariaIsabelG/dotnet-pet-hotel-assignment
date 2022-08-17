@@ -36,6 +36,9 @@ ready to go. For base mode you do not need to update the React App at all. Simpl
 Your general approach should be like so:
 
    1. Create your models
+   [x] PetOwner model
+   **NotMapped**`https://www.entityframeworktutorial.net/code-first/notmapped-dataannotations-attribute-in-code-first.aspx`
+
    2. Add them to your ApplicationContext
    3. Migrate your database with `dotnet ef migrations` and `dotnet ef database update`
    4. Create your controllers
