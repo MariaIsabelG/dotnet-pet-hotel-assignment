@@ -24,6 +24,19 @@ namespace pet_hotel.Controllers
         {
             return _context.Pets;
         }
+
+        [HttpPost]
+
+        public Pet Post(Pet pet)
+        {
+            // Tell the DB context about our new pet object
+            _context.Add(pet);
+            // ...and save the pet object to the database
+            _context.SaveChanges();
+
+            // Respond back with the created pet object
+            return pet;
+        }
         // [HttpGet]
         // [Route("test")]
         // public IEnumerable<Pet> GetPets() {
