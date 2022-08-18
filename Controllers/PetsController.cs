@@ -37,6 +37,7 @@ namespace pet_hotel.Controllers
             // Respond back with the created pet object
             return pet;
         }
+
         // [HttpGet]
         // [Route("test")]
         // public IEnumerable<Pet> GetPets() {
