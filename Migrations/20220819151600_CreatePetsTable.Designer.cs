@@ -10,7 +10,7 @@ using pet_hotel.Models;
 namespace dotnet_bakery.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220817210852_CreatePetsTable")]
+    [Migration("20220819151600_CreatePetsTable")]
     partial class CreatePetsTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

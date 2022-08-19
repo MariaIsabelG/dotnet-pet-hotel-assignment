@@ -13,7 +13,9 @@ namespace pet_hotel
     public string name {get; set;}
 
     public string emailAddress {get; set;}
+    
     [NotMapped]
+    [JsonIgnore] 
     public int petCount {get; set;}
     }
 }

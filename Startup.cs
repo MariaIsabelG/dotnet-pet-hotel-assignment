@@ -33,7 +33,7 @@ namespace pet_hotel
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseNpgsql(connectionString)
             );
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration => {
